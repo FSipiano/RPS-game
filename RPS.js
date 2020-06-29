@@ -31,15 +31,15 @@ function determineWinner(userChoice, computerChoice) {
             return 'You have disarmed an old lady, you win!';
         }
     }
-    if (userChoice === 'bear') {
-        if (computerChoice === 'gun') {
+    if (userChoice === 'lion') {
+        if (computerChoice === 'old lady') {
             return 'You have been shot by an old lady, you lose!';
         } else {
             return 'You have mauled an alien, you win!';
         }
     }
-    if (userChoice === 'gun') {
-        if (computerChoice === 'human') {
+    if (userChoice === 'old lady') {
+        if (computerChoice === 'alien') {
             return 'You have been disarmed by an alien, you lose!'
         } else {
             return 'You have shot an alien, you win!';
