@@ -1,3 +1,5 @@
+playGame();
+
 //input user choice
 function getUserChoice(userInput) {
     userInput = userInput.toLowerCase();
@@ -51,9 +53,9 @@ function playGame() {
     var userChoice = getUserChoice(promptUserChoice)
     var computerChoice = getComputerChoice();
     console.log(userChoice);
-    console.log(ComputerChoice);
+    console.log(computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
 }
 
-playGame();
+
 
