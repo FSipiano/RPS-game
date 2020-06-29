@@ -4,7 +4,7 @@ function getUserChoice(userInput) {
     if (userInput === 'lion' || userInput === 'alien' || userInput === 'old lady') {
         return userInput;
     } else {
-        return 'Please enter "Human, Bear or Gun!"'
+        return 'Please enter "Alien, Lion or Old lady!"'
     }
 }
 //computer random choice
