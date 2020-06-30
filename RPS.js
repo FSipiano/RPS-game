@@ -26,23 +26,23 @@ function determineWinner(userChoice, computerChoice) {
     }
     if (userChoice === 'alien') {
         if (computerChoice === 'lion') {
-            return 'You were mauled by a lion, you lose!';
+            return 'You were mauled by the lion, you lose!';
         } else {
-            return 'You have disarmed an old lady, you win!';
+            return 'You have disarmed the old lady, you win!';
         }
     }
-    if (userChoice === 'bear') {
-        if (computerChoice === 'gun') {
+    if (userChoice === 'lion') {
+        if (computerChoice === 'old lady') {
             return 'You have been shot by an old lady, you lose!';
         } else {
-            return 'You have mauled an alien, you win!';
+            return 'You have mauled the alien, you win!';
         }
     }
     if (userChoice === 'gun') {
         if (computerChoice === 'human') {
             return 'You have been disarmed by an alien, you lose!'
         } else {
-            return 'You have shot an alien, you win!';
+            return 'You have shot the alien, you win!';
         }
     }
 }
@@ -51,7 +51,7 @@ function playGame() {
     var userChoice = getUserChoice(promptUserChoice)
     var computerChoice = getComputerChoice();
     console.log(userChoice);
-    console.log(ComputerChoice);
+    console.log(computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
 }
 
