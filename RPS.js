@@ -1,10 +1,12 @@
+playGame();
+
 //input user choice
 function getUserChoice(userInput) {
     userInput = userInput.toLowerCase();
     if (userInput === 'lion' || userInput === 'alien' || userInput === 'old lady') {
         return userInput;
     } else {
-        return 'Please enter "Human, Bear or Gun!"'
+        return 'Please enter "Alien, Lion or Old lady!"'
     }
 }
 //computer random choice
@@ -38,8 +40,8 @@ function determineWinner(userChoice, computerChoice) {
             return 'You have mauled the alien, you win!';
         }
     }
-    if (userChoice === 'gun') {
-        if (computerChoice === 'human') {
+    if (userChoice === 'old lady') {
+        if (computerChoice === 'alien') {
             return 'You have been disarmed by an alien, you lose!'
         } else {
             return 'You have shot the alien, you win!';
@@ -55,5 +57,5 @@ function playGame() {
     console.log(determineWinner(userChoice, computerChoice));
 }
 
-playGame();
+
 
